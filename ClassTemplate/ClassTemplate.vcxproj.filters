@@ -1,6 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="ClassTemplate.cpp" />
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{14ec15d8-0759-4da7-9a24-3fbd759c10f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案">
+      <UniqueIdentifier>{7f9a1589-bfc2-4955-a4e6-a375e8d6b579}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClassTemplate.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassTemplate.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

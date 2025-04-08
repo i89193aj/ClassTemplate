@@ -21,21 +21,23 @@ enum LeetcodeExam {
 
 int main()
 {
-    LeetcodeExam ExamEnum = Leetcodexxx;                          //ChangeForExam
-    vector<int> LinkedlistInput1 = { 7,13,11,10,1 };              //ChangeForExam
-    vector<int> LinkedlistInput2 = { 7,13,11,10,1 };              //ChangeForExam
-    int iInput1 = 0;int iInput2 = 0;
-    int Ans = 0; vector<int> AnsVector; string AnsStr = "";;
+    //try case
+    LeetcodeExam ExamEnum = Leetcodexxx;    //ChangeForExam
+    //intput
+    vector<int> vInput1 = { 7,13,11,10,1 };              
+    vector<int> vInput2 = { 7,13,11,10,1 };              
+    vector<vector<int>> vvInput1 = { {1,2} ,{2,3},{3,4},{1,3} };
     string strinput1 = "bab";
     string strinput2 = "xaabacxcabaaxcabaax";
-
-
+    int iInput1 = 0;int iInput2 = 0;
+    //output
+    int Ans = 0; vector<int> AnsVector; string AnsStr = "";bool Ansbool = false;
     ClassTemplate* Implementation = new ClassTemplate();
 
     switch (ExamEnum)
     {
     case Leetcodexxx:
-        AnsVector = Implementation->Leetcode_Sol_xxx(LinkedlistInput1, iInput1,1);
+        AnsVector = Implementation->Leetcode_Sol_xxx(vInput1, iInput1,1);
         break;
 
     default:
@@ -48,7 +50,7 @@ int main()
     ClassTemplate obj2(10);          // 呼叫帶參數建構式
     obj2.display();
 
-    obj1.setData(20);          // 修改資料成員
+    obj1.setData(20);                // 修改資料成員
     obj1.display();
 
     return 0;
@@ -89,9 +91,6 @@ void ClassTemplate::display() const {
     std::cout << "Data: " << *data << std::endl;
 }
 #pragma endregion
-
-
-
 
 #pragma region Leetcode xxx. ExamName
 //Leetcode xxx. ExamName
